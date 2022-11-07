@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --success-color: #1a73e8;
+    --error-color:#d50000;
+}
+
+/* common  */
+
+.clear{
+    clear: both;
+}
+
+/* wrapper  */
+
+.wrapper{
+    margin:0 auto;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    max-width: 1000px;
+    background-color: #fff;
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.2) !important; 
+    animation: containerFadeIn ease 0.5s;
+}
+
+.book-container{
+    padding: 25px 64px;
+    width: 100%;
+}
+
+/* header  */
+
+.header{
+    text-align: center;
+    box-shadow: none;
+    border: none;
+}
+
+/* body  */
+
+.body-page{
+    padding-top: 10px;
+}
+
+/* body -> info-field */
+
+.form-data{
+    border: none !important;
+    padding-top: 15px;
+    padding-bottom: 8px;
+    position: relative;
+}
+
+.input-info{
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #adadad;
+    width: 85%;
+    padding: 8px 12px;
+}
+
+.form-data span{
+    position: absolute;
+    border: none;
+    outline: none;
+    width: 0%;
+    border-bottom: 3px solid var(--success-color);
+    left: 0px;
+    top: 55px;
+    transition: 0.3s;
+}
+
+.input-info:focus ~ span{
+    width: 85%;
+}
+
+.book-desc{
+    padding: 8px 12px;
+    border: 3px solid #adadad;
+    border-radius: 3px;
+    width: 85%;
+    outline: none;
+}
+
+/* body -> img-field  */
+
+.img-field{
+    padding: 15px;
+}
+
+.img-field #input{
+    display: none;
+}
+
+.img-field .label-img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: dashed 2px #adadad;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.img-field .hide-border{
+    border: none;
+}
+
+
+#title-prev{
+    opacity: 0.7;
+}
+
+#title-prev:hover{
+    opacity: 1;
+}
+
+.img-field #preview{
+    max-width: 335px;
+    object-fit: cover;
+}
+
+.img-field #preview:hover{
+    scale: 1.05;
+    transition: 0.3s;
+}
+
+/* footer */
+.btn-save-wrap{
+    width: 100%;
+}
+
+.btn-save{
+    background-color: var(--success-color) ;
+    opacity: 0.8;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px 50px;
+    border-radius: 8px;
+    float: right;
+}
+
+.btn-save:hover{
+    opacity: 1;
+}
+
+/* animation */
+
+@keyframes containerFadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

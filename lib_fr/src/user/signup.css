@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --success-color: #1a73e8;
+}
+
+.wrap{
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.2);
+    animation: containerFadeIn ease 0.5s;
+}
+
+.login-wrap{
+    height: 380px;
+}
+
+.signup-wrap{
+    height: 520px;
+}
+
+.h1-cus{
+    margin-top: 20px;
+}
+
+.btn-wrap{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-5%);
+}
+
+.btn-cus{
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    background-color: var(--success-color);
+    color: #fff;
+    opacity: 0.8;
+}
+
+.btn-cus:hover{
+    background-color: var(--success-color);
+    color: #fff;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.form-wrap{
+    padding: 0 20px;
+    width: 100%;
+}
+
+.form{
+    width: 90%;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #adadad;
+    padding: 8px 12px;
+}
+
+.message{
+    color: red;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+@keyframes containerFadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
